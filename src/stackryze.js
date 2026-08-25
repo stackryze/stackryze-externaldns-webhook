@@ -1,5 +1,5 @@
 // Thin client for the Stackryze DNS REST API using a Bearer token.
-const BASE = (process.env.STACKRYZE_API_URL || 'https://api.stackryze.com/api').replace(/\/$/, '');
+const BASE = (process.env.STACKRYZE_API_URL || 'https://api-dns.stackryze.com/api').replace(/\/$/, '');
 const TOKEN = process.env.STACKRYZE_API_TOKEN;
 
 if (!TOKEN) {
