@@ -13,7 +13,7 @@ Kubernetes Ingress/Service
     ExternalDNS  ──(localhost webhook)──►  stackryze-externaldns-webhook
                                                    │  Bearer token
                                                    ▼
-                                          api.stackryze.com/api
+                                          api-dns.stackryze.com/api
 ```
 
 The provider manages records inside zones you already own on Stackryze. It does
@@ -24,7 +24,7 @@ not create or delete zones.
 | Env | Required | Default | Description |
 |-----|----------|---------|-------------|
 | `STACKRYZE_API_TOKEN` | yes | — | Token with **write** scope (Settings → API tokens) |
-| `STACKRYZE_API_URL` | no | `https://api.stackryze.com/api` | API base (include `/api`) |
+| `STACKRYZE_API_URL` | no | `https://api-dns.stackryze.com/api` | API base (include `/api`) |
 | `PORT` | no | `8888` | Port ExternalDNS connects to |
 
 ## Run locally
